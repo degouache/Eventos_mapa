@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:elevation="4dp"
+        android:text="titulo"
+        android:textAllCaps="false"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:elevation="4dp"
+        android:text="lugar"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#404040"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_place_24"/>
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_marginTop="12dp"
+        android:elevation="4dp"
+        android:text="hora"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"/>
+
+    <TextView
+        android:id="@+id/dateDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_toRightOf="@id/dateTime"
+        android:elevation="4dp"
+        android:text="fecha"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+</RelativeLayout>
